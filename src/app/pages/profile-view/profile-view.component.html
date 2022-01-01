@@ -1,0 +1,35 @@
+<div class="container bg-color">
+    <div class="row">
+        <div class="col-12 p-0">
+            <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide *ngFor="let data of profileData">
+                    <div class="image-pic">
+                        <img src="{{data.banner}}" alt="" class="img-fluid">
+                        <button class='input-btn upload' id='input_btn'>
+                            <i class="fa fa-camera cam"></i>
+                        </button>
+                    </div>
+                </ng-template> 
+            </owl-carousel-o>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="profil-data"  *ngFor="let data of profileData">
+                <div class="profil-pic">
+                    <img src="{{data.image_url}}" alt="" class="img-fluid">
+                    <button class="pen-btn upload"><i class="fa fa-pencil pen" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <div class="profil-details" *ngFor="let data of profileData">
+                <h4>{{data.prof_name}}</h4>
+                <p>{{data.prof_dest}}</p>
+                <p>{{data.prof_name}}<a href="">{{data.prof_con}}</a> <a href="">{{data.prof_info}}</a></p>
+            </div>
+        </div>
+    </div>
+</div>

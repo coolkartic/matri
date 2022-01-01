@@ -1,0 +1,77 @@
+.bg-color{
+    background: #31a2da;
+    height: auto !important;
+}
+.image-pic img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+
+}
+.image-pic {
+    position: relative;
+}
+.image-pic button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border-radius: 100px;
+    border: none;
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+}
+.image-pic button i {
+    color: orange;
+}
+.profil-data {
+    position: relative;
+}
+.profil-pic img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+.profil-pic {
+    z-index: 1;
+    position: absolute;
+    object-fit: cover;
+    top: -100px;
+    left: 50px;
+}
+.profil-pic button{
+    position: absolute;
+    background: transparent;
+    border: none;
+    right: 20px;
+    top: 15px;
+    color: #fff;
+}
+.profil-details {
+    margin-top: 120px;
+    color: #fff;
+    padding: 20px 50px;
+}
+.profil-details p {
+    margin: 0;
+}
+.profil-details p a {
+    text-decoration: none;
+    margin-left: 15px;
+    color: orange;
+    font-weight: 700;
+}
+.profi-btn {
+    padding: 25px 0;
+}
+.profi-btn button{
+    background: orangered;
+    border: none;
+}
+.profi-btn button:nth-child(2){
+ margin-left: 10px;
+}
+.profi-btn button:nth-child(3){
+    margin-left: 10px;
+   }

@@ -1,0 +1,29 @@
+<div class="bg-color">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <owl-carousel-o [options]="customOptions">
+                    <ng-template carouselSlide *ngFor="let data of profileData">
+                            <div class="card col-10">
+                                <a [routerLink]="'/profile-view/'+data.id">
+                                    <figure>
+                                        <img src="{{data.image_url}}" alt="" class="img-fluid">
+                                    </figure>
+                                </a>
+                                    <div class="text-body p-3">
+                                        <h6>{{data.prof_name}}</h6>
+                                        <div>{{data.details}}</div>
+                                        <div>{{data.details1}}</div>
+                                        <div>{{data.prof_add}}</div>
+                                        <div class="noti-btn">
+                                            <button type="button" class="btn mr-2" (click)="clickMarked(data.id)" [ngClass]="{'active': tab===data.id}">{{data.yes}}</button>
+                                            <button type="button" class="btn mx-2" (click)="clickPresent(data.id1)" [ngClass]="{'active': tab===data.id1}">{{data.no}}</button>
+                                        </div>
+                                    </div>
+                            </div>
+                    </ng-template>  
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</div>
