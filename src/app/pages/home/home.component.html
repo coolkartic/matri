@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <owl-carousel-o [options]="customOptions">
+                <owl-carousel-o [options]="customOptions" class="mx-5">
                     <ng-template carouselSlide *ngFor="let data of profileData">
                             <div class="card col-10">
                                 <a [routerLink]="'/profile-view/'+data.id">

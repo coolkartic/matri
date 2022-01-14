@@ -1,10 +1,10 @@
 <div class="container bg-color">
-    <div class="row">
-        <div class="col-12 p-0">
+    <div class="row mt-5">
+        <div class="col-sm-12 ">
             <owl-carousel-o [options]="customOptions">
-                <ng-template carouselSlide *ngFor="let data of profileData">
+                <ng-template carouselSlide *ngFor="let data of profileimg">
                     <div class="image-pic">
-                        <img src="{{data.banner}}" alt="" class="img-fluid">
+                        <img src="{{data.images}}" alt="" class="img-fluid">
                         <button class='input-btn upload' id='input_btn'>
                             <i class="fa fa-camera cam"></i>
                         </button>
@@ -13,22 +13,26 @@
             </owl-carousel-o>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <div class="profil-data"  *ngFor="let data of profileData">
-                <div class="profil-pic">
-                    <img src="{{data.image_url}}" alt="" class="img-fluid">
-                    <button class="pen-btn upload"><i class="fa fa-pencil pen" aria-hidden="true"></i></button>
+    <div class="card margin">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <div  *ngFor="let data of profileData">
+                    <div class="py-5 px-3">
+                        <p><span class="pr-3 verfy"><i class="far fa-check-circle pr-2"></i>verifed</span> 
+                            <span class="prime"><i class="fas fa-crown pr-2"></i>Premium NRI</span>
+                        </p>
+                        <h2 class="profl">{{data.prof_name}}</h2>
+                        <div>{{data.prof_dest}}</div>
+                        <div>{{data.details}}</div>
+                            <div>{{data.details1}}</div>
+                            <div>{{data.prof_add}}</div>
+                        <p><a href="">{{data.prof_con}}</a> <a href="">{{data.prof_info}}</a></p>
+                        <div><i class="far fa-star"></i> ShortList <span class="like mr-3">Like her? </span>
+                            <span class="font-icon wrng"><i class="far fa-times-circle"></i></span>
+                            <span class="font-icon orng"><i class="far fa-check-circle"></i></span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <div class="profil-details" *ngFor="let data of profileData">
-                <h4>{{data.prof_name}}</h4>
-                <p>{{data.prof_dest}}</p>
-                <p>{{data.prof_name}}<a href="">{{data.prof_con}}</a> <a href="">{{data.prof_info}}</a></p>
             </div>
         </div>
     </div>

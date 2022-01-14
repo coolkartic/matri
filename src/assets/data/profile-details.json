@@ -1,13 +1,31 @@
 [
     {
         "id": 1,
-        "prof_name": "Anu",
+        "prof_name": "Anuratha B",
         "prof_dest": "MBBS, Doctor @ GH Medical",
         "prof_add": "chennai, Tamil Nadu, India",
         "prof_con": "97 connection",
         "prof_info": "contact info",
         "id1": 6,
-        "image_url": "assets/images/p1.jpg",
+        "image_url": "assets/images/ban26.jpg",
+        "image": [
+            {
+                "id": 1,
+                "images": "assets/images/ban27.jpg"
+            },
+            {
+                "id": 2,
+                "images": "assets/images/ban28.jpg"
+            },
+            {
+                "id": 3,
+                "images": "assets/images/ban29.jpg"
+            },
+            {
+                "id": 4,
+                "images": "assets/images/ban30.jpg"
+            }
+        ],
         "name": "My Name1",
         "details": "27Yrs, 5ft 6in, Tamil, Nair,",
         "details1": "MBBS, Doctor, chennai",
@@ -17,13 +35,31 @@
     },
     {
         "id": 2,
-        "prof_name": "Sam",
+        "prof_name": "Samantha K",
         "prof_dest": "Software Engineer @ JS Solutions",
         "prof_add": "Thoothukudi, Tamil Nadu, India",
         "prof_con": "10 connection",
         "prof_info": "contact info",
         "id1": 7,
-        "image_url": "assets/images/p5.jpg",
+        "image_url": "assets/images/ban21.jpg",
+        "image": [
+            {
+                "id": 1,
+                "images": "assets/images/ban22.jpg"
+            },
+            {
+                "id": 2,
+                "images": "assets/images/ban23.jpg"
+            },
+            {
+                "id": 3,
+                "images": "assets/images/ban24.jpg"
+            },
+            {
+                "id": 4,
+                "images": "assets/images/ban25.jpg"
+            }
+        ],
         "name": "My Name1",
         "details": "35Yrs, 5ft 6in, Tamil, Nadar",
         "details1": "BE, Engg, Thoothukudi",
@@ -39,7 +75,25 @@
         "prof_con": "20 connection",
         "prof_info": "contact info",
         "id1": 8,
-        "image_url": "assets/images/p3.jpg",
+        "image_url": "assets/images/ban5.jpg",
+        "image": [
+            {
+                "id": 1,
+                "images": "assets/images/ban9.jpg"
+            },
+            {
+                "id": 2,
+                "images": "assets/images/ban6.jpg"
+            },
+            {
+                "id": 3,
+                "images": "assets/images/ban10.jpg"
+            },
+            {
+                "id": 4,
+                "images": "assets/images/ban11.jpg"
+            }
+        ],
         "name": "My Name1",
         "details": "22Yrs, 5ft 6in, Tamil, Chetti,",
         "details1": "BE(ECE), Engg, Kovilpatti",
@@ -55,7 +109,25 @@
         "prof_con": "25 connection",
         "prof_info": "contact info",
         "id1": 9,
-        "image_url": "assets/images/p4.jpeg",
+        "image_url": "assets/images/p1.jpg",
+        "image": [
+            {
+                "id": 1,
+                "images": "assets/images/ban12.jpg"
+            },
+            {
+                "id": 2,
+                "images": "assets/images/ban13.jpg"
+            },
+            {
+                "id": 3,
+                "images": "assets/images/ban14.jpg"
+            },
+            {
+                "id": 4,
+                "images": "assets/images/ban15.jpg"
+            }
+        ],
         "name": "My Name1",
         "details": "21Yrs, 5ft 6in, Tamil, No,",
         "details1": "BE(CSE), Engg, Thirunelveli",

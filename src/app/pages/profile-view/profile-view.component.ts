@@ -13,6 +13,8 @@ export class ProfileViewComponent implements OnInit {
   profileDetail: any;
   profileData: any;
   id: any;
+  profileDatas: any;
+  profileimg: any;
 
   constructor(
     private activeRoute: ActivatedRoute,
@@ -21,6 +23,7 @@ export class ProfileViewComponent implements OnInit {
 
   ngOnInit(): void {
     this.getData();
+    this.getDatas();
     // let id = this.activeRoute.snapshot.paramMap.get('id');
     // this.profileData = this.profileDetail.filter((x: { id: string | null; })=>x.id==id);
     // console.log(this.profileData, "pppp");
@@ -33,7 +36,7 @@ export class ProfileViewComponent implements OnInit {
     touchDrag: false,
     pullDrag: false,
     dots: false,
-    navSpeed: 700,
+    navSpeed: 500,
     navText: ['', ''],
     responsive: {
       0: {
@@ -58,7 +61,13 @@ export class ProfileViewComponent implements OnInit {
       this.profileDetail = res;
       let id = this.activeRoute.snapshot.paramMap.get('id');
       this.profileData = this.profileDetail.filter((x: { id: string | null; })=>x.id==id);
-      // var profileData = this.profileData.filter((x: {id: any | null }) => x.id ==id)
+      this.profileimg = this.profileData[0].image;
+    })
+  }
+    
+  getDatas(){
+    this.servicesService.getImgJSON().subscribe(res => {
+      this.profileDatas = res;
     })
   }
 

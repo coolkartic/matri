@@ -13,4 +13,7 @@ export class ServicesService {
     return this.http.get("./assets/data/profile-details.json");
   }
 
+  public getImgJSON(): Observable<any> {
+    return this.http.get("./assets/data/images.json");
+  }
 }

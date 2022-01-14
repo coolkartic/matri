@@ -1,7 +1,3 @@
-.bg-color{
-    background: #31a2da;
-    height: auto !important;
-}
 .image-pic img {
     width: 100%;
     height: 350px;
@@ -48,20 +44,6 @@
     top: 15px;
     color: #fff;
 }
-.profil-details {
-    margin-top: 120px;
-    color: #fff;
-    padding: 20px 50px;
-}
-.profil-details p {
-    margin: 0;
-}
-.profil-details p a {
-    text-decoration: none;
-    margin-left: 15px;
-    color: orange;
-    font-weight: 700;
-}
 .profi-btn {
     padding: 25px 0;
 }
@@ -75,3 +57,49 @@
 .profi-btn button:nth-child(3){
     margin-left: 10px;
    }
+   .margin{
+       margin-top: -35px !important;
+       border-radius: 0 0 10px 10px;
+       box-shadow: 0 0 10px #7e7a7a;
+   }
+
+   .verfy {
+    color: #0d1e96;
+    font-size: 20px;
+   }
+
+   .prime {
+    font-size: 20px;
+    color: #9d00ff;
+   }
+   .pr-2{
+       padding-right: 10px;
+       font-weight: 500;
+    }
+    .pr-3{
+        padding-right: 20px;
+    }
+    .profl {
+        font-weight: 700;
+        font-family: sans-serif;
+    }
+    .like {
+        font-size: 20px;
+        font-weight: 700;
+        padding-left: 55px;
+    }
+
+    .font-icon {
+        font-size: 40px;
+    }
+
+    .orng {
+        color: #ff8d00;
+    }
+    .wrng {
+        color: #dc9d9db0;
+    }
+    .img-fluid{
+        box-shadow: 0 0 10px #7e7a7a;
+        border-radius: 10px 10px 0 0 ;
+    }
